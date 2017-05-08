@@ -1,0 +1,90 @@
+/* Less mixins for Flexbox prefixes */
+/* Author: Dave Carney for Vehicle Media https://vehiclemedia.com */
+/* dave@vehiclemedia.com */
+
+
+.display-flex() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+.flex-direction(...) {
+	@process_oldestwebkit: ~`(function(r){return r="row"==r||"column"==r?"normal":"row-reverse"==r||"column-reverse"==r?"reverse":8121991})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process_olderwebkit: ~`(function(r){return r="row"==r||"row-reverse"==r?"horizontal":"column"==r||"column-reverse"==r?"vertical":8121991})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process: ~`(function(n){return n=n||"row"})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	-webkit-box-orient: @process_olderwebkit;
+	-webkit-box-direction: @process_oldestwebkit;
+	-webkit-flex-direction: @process;
+	-ms-flex-direction: @process;
+	flex-direction: @process;
+}
+.flex-wrap(@value: wrap) {
+	-ms-flex-wrap: @value;
+	-webkit-flex-wrap: @value;
+	flex-wrap: @value;
+}
+.align-items(...) {
+	@process_olderwebkit: ~`(function(t){return t=t||"stretch","flex-start"==t?t="start":"flex-end"==t&&(t="end"),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process_moz: ~`(function(t){return t=t||"stretch","flex-start"==t?t="start":"flex-end"==t&&(t="end"),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process: ~`(function(t){return t=t||"stretch"})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process_ms: ~`(function(t){return t=t||"stretch","flex-start"==t?t="start":"flex-end"==t&&(t="end"),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	-webkit-box-align: @process_olderwebkit;
+	-moz-box-align: @process_moz;
+	-webkit-align-items: @process;
+	-ms-flex-align: @process_ms;
+	align-items: @process;
+}
+.justify-content(...) {
+	@process_oldestWebkit: ~`(function(e){return e=e||"start","flex-start"==e?e="start":"flex-end"==e?e="end":"space-between"!=e&&"space-around"!=e||(e="justify"),e})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process_ms: ~`(function(t){return t=t||"start","flex-start"==t?t="start":"flex-end"==t?t="end":"space-between"==t?t="justify":"space-around"==t&&(t="distribute"),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process: ~`(function(t){return t=t||"flex-start"})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	-ms-flex-pack: @process_ms;
+	-webkit-box-pack: @process_oldestWebkit;
+	-webkit-justify-content: @process;
+	justify-content: @process;
+}
+.align-content(...) {
+	@process: ~`(function(t){return t=t||"stretch"})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process_ms: ~`(function(e){return e=e||"stretch","flex-start"==e?e="start":"flex-end"==e?e="end":"space-between"==e?e="justify":"space-around"==e&&(e="distribute"),e})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	-webkit-align-content: @process;
+	-ms-flex-line-pack: @process_ms;
+	align-content: @process;
+}
+.order(@value) {
+	-webkit-box-ordinal-group: @value;
+	-ms-flex-order: @value;
+	-webkit-order: @value;
+	order: @value;
+}
+.flex-grow(@value) {
+	-ms-flex-positive: @value;
+	-webkit-flex-grow: @value;
+	flex-grow: @value;
+}
+.flex-shrink(@value) {
+	-ms-flex-negative: @value;
+	-webkit-flex-shrink: @value;
+	flex-shrink: @value;
+}
+.flex-basis(@value) {
+	-ms-preferred-size: @value;
+	-webkit-flex-basis: @value;
+	flex-basis: @value;
+}
+.flex(...) {
+	@process_olderwebkit: ~`(function(t){return/^\d+/.test(t)?t=t.match(/^\d+/)[0]:""==t&&(t="0"),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process: ~`(function(t){return t=t||"0 1 auto",/^[^, ]*,/.test(t)&&(t=t.replace(/(?:,)(?![^(]*\))/g,"")),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	-webkit-box-flex: @process_olderwebkit;
+	-webkit-flex: @process;
+	-ms-flex: @process;
+	flex: @process;
+}
+.align-self(...) {
+	@process: ~`(function(n){return n=n||"auto"})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	@process_ms: ~`(function(t){return t=t||"auto","flex-start"==t?t="start":"flex-end"==t&&(t="end"),t})((function(){var r="@{arguments}";return r=r.replace(/^\[|\]$/g,"")})())`;
+	-webkit-align-self: @process;
+	-ms-flex-item-align: @process_ms;
+	align-self: @process;
+}

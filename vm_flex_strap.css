@@ -404,8 +404,7 @@ label {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
 input,
@@ -1995,7 +1994,6 @@ output {
           user-select: none;
   border: 1px solid transparent;
   font-size: 1rem;
-  border-radius: 0.25rem;
 }
 
 .btn:focus, .btn:hover {

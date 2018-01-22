@@ -1229,26 +1229,16 @@ output {
 
 @media (min-width: 768px) and (max-width: 992px) {
   .row-reverse-sm {
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-direction: row-reverse;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
   .col-reverse-sm {
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-direction: column-reverse;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
@@ -1573,26 +1563,16 @@ output {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .row-reverse-md {
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-direction: row-reverse;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
   .col-reverse-md {
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-direction: column-reverse;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 
@@ -1634,26 +1614,16 @@ output {
   }
 
   .row-reverse-lg {
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-direction: row-reverse;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 
   .col-reverse-lg {
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: flex;
-    -ms-flex-direction: column-reverse;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 

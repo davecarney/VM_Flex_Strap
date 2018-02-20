@@ -1,4 +1,4 @@
-/* Vehicle Media's FlexboxGrid/Bootstrap4 Hybrid grid system */
+/* Vehicle Media's FlexboxGrid/Bootstrap4 Hybrid grid system  version 1.2.0 */
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -465,9 +465,6 @@ output {
 .container {
   margin-right: auto;
   margin-left: auto;
-}
-
-.container-fluid {
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -536,20 +533,6 @@ output {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-
-.row.reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.col.reverse {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
 }
 
 @media (max-width: 767px) {
@@ -776,6 +759,17 @@ output {
   text-align: end;
 }
 
+.around-xs {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.between-xs {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .top-xs {
   -webkit-box-align: start;
   -ms-flex-align: start;
@@ -794,16 +788,6 @@ output {
   align-items: flex-end;
 }
 
-.around-xs {
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-
-.between-xs {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
 .stretch-xs {
   -ms-flex-align: stretch;
   -webkit-box-align: stretch;
@@ -1079,6 +1063,17 @@ output {
     text-align: end;
   }
 
+  .around-sm {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-sm {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .top-sm {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -1095,17 +1090,6 @@ output {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-  }
-
-  .around-sm {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-
-  .between-sm {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .stretch-sm {
@@ -1402,6 +1386,17 @@ output {
     text-align: end;
   }
 
+  .around-md {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-md {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .top-md {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -1418,17 +1413,6 @@ output {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-  }
-
-  .around-md {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-
-  .between-md {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .stretch-md {
@@ -1739,6 +1723,17 @@ output {
     text-align: end;
   }
 
+  .around-lg {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .between-lg {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .top-lg {
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -1755,17 +1750,6 @@ output {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-  }
-
-  .around-lg {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-
-  .between-lg {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .stretch-lg {

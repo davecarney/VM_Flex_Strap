@@ -1,4 +1,4 @@
-/* Vehicle Media's FlexboxGrid/Bootstrap4 Hybrid grid system  version 1.2.0 */
+/* Vehicle Media's FlexboxGrid/Bootstrap4 Hybrid grid system  version 1.2.1 */
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -492,6 +492,15 @@ output {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
+}
+
+.inline-flex {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 .flex-wrap {

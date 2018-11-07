@@ -2,7 +2,7 @@
 
 Vehicle Media's FlexboxGrid / Bootstrap 4 hybrid Grid System
 
-v.2.0
+v.2.1
 
 [Demo Page](http://frontend.vehicle44.com/VM_Flex_Strap/)
 

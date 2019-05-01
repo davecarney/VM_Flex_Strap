@@ -2,7 +2,9 @@
 
 Vehicle Media's FlexboxGrid / Bootstrap 4 hybrid Grid System
 
-v.2.1
+v.3.0
+
+In 3.0 All prefixes have been dropped
 
 [Demo Page](http://frontend.vehicle44.com/VM_Flex_Strap/)
 

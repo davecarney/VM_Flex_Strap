@@ -1,5 +1,6 @@
 /*! Vehicle Media's FlexboxGrid/Bootstrap4 Hybrid grid system */
-/*! Version 3.0 20px column padding version for iPhone 6 and up */
+/*! Version 3.2 20px column padding version for iPhone 6 and up */
+/*! Internet Explorer 11 compatible */
 
 /*! Modified version of normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /*! Combined with Bootstrap4.1.3 reboot.css */
@@ -501,8 +502,9 @@ template {
   width: 100%;
 }
 
+/* careful: IE & iOS<11 will allow "too large" images to not wrap .col-xs properly */
 .col-xs {
-  flex: 1 0 0;
+  flex: 1 0 0%;
   max-width: 100%;
 }
 
@@ -759,8 +761,9 @@ template {
     flex-direction: row;
   }
 
+  /* careful: IE & iOS<11 will allow "too large" images to not wrap .col-sm properly */
   .col-sm {
-    flex: 1 0 0;
+    flex: 1 0 0%;
     max-width: 100%;
   }
 
@@ -1022,8 +1025,9 @@ template {
     flex-direction: row;
   }
 
+  /* careful: IE & iOS<11 will allow "too large" images to not wrap .col-md properly */
   .col-md {
-    flex: 1 0 0;
+    flex: 1 0 0%;
     max-width: 100%;
   }
 
@@ -1285,8 +1289,9 @@ template {
     flex-direction: row;
   }
 
+  /* careful: IE & iOS<11 will allow "too large" images to not wrap .col-lg properly */
   .col-lg {
-    flex: 1 0 0;
+    flex: 1 0 0%;
     max-width: 100%;
   }
 
@@ -1545,8 +1550,9 @@ template {
     flex-direction: row;
   }
 
+  /* careful: IE & iOS<11 will allow "too large" images to not wrap .col-xl properly */
   .col-xl {
-    flex: 1 0 0;
+    flex: 1 0 0%;
     max-width: 100%;
   }
 

@@ -4,8 +4,8 @@ Vehicle Media's FlexboxGrid / Bootstrap 4 hybrid Grid System
 
 v.3.2
 
-In 3.0 All prefixes have been dropped
 In 3.2 VM_Flex_Strap is now fully compatible with IE 11
+
 Note: .col-xs, .col-sm, etc. In IE, a "too big" image will not wrap properly. The image width will be allowed to overflow the item.
 
 [Demo Page](http://frontend.vehicle44.com/VM_Flex_Strap/)

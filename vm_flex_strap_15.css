@@ -1,5 +1,5 @@
 /*! Vehicle Media's FlexboxGrid/Bootstrap4 Hybrid grid system */
-/*! Version 3.2 15px column padding version */
+/*! Version 3.3 15px column padding version */
 /*! Internet Explorer 11 compatible */
 
 /*! Modified version of normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1981,3 +1981,4 @@ h6 {
 .see-through { opacity: 0; pointer-events: none; }
 .prevent-scroll { position: fixed; width: 100%; }
 
+.object-fitter-img { object-fit: cover; }
